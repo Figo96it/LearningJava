@@ -4,15 +4,22 @@ package org.example.generictypes;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+        // Create a Pair with a String and a Double
         Pair<String, Double> pair = new Pair<>("First value", 40.28);
+
+        // Retrieve values from the Pair
         String first = pair.first();
         Double second = pair.second();
 
+        // Print the values
         System.out.println(first);
         System.out.println(second);
 
+        // Create an Integer array and perform a swap operation
         Integer[] array1= {1,2,3,4,5,6,7,8};
         array1 = swap(array1, 2, 4);
+
+        // Create an Integer array and perform a swap operation
         System.out.println(array1[2]+" "+array1[4]);
     }
 
