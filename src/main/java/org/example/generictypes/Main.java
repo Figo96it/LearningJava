@@ -19,7 +19,7 @@ public class Main {
 
         // Create an Integer array and perform a swap operation
         Integer[] array1= {1,2,3,4,5,6,7,8};
-        array1 = swap(array1, 2, 4);
+        swap(array1, 2, 4);
 
         // Create an Integer array and perform a swap operation
         System.out.println(array1[2]+" "+array1[4]);
