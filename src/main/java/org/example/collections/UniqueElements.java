@@ -29,7 +29,7 @@ public class UniqueElements {
         doubleValues.add(21.89);
         doubleValues.add(765.990);
 
-        List<?> uniqueDoubleValues = uniqueElements(doubleValues);
+        List<Double> uniqueDoubleValues = uniqueElements(doubleValues);
         System.out.println("Double unique values: " + uniqueDoubleValues);
 
     }
@@ -40,8 +40,7 @@ public class UniqueElements {
      * @param values The input list with potential duplicates.
      * @return A list containing only unique elements from the input list.
      */
-    private static List<?> uniqueElements(List<?> values) {
-        Set<?> uniqueElements = new HashSet<>(values);
-        return new ArrayList<>(uniqueElements);
+    private static <T> List<T> uniqueElements(List<T> values) {
+        return new ArrayList<>(new HashSet<>(values));
     }
 }
