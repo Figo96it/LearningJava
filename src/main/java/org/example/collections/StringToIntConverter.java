@@ -30,7 +30,11 @@ public class StringToIntConverter {
 
         for (String string : listOfStrings) {
             // Convert String to Integer
-            listOfIntegers.add(Integer.parseInt(string));
+            try {
+                listOfIntegers.add(Integer.parseInt(string));
+            } catch (NumberFormatException e) {
+                System.out.println("Error converting element " + string);
+            }
         }
 
         return listOfIntegers;
