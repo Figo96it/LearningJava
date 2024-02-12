@@ -33,6 +33,7 @@ public class StringToIntConverter {
             try {
                 listOfIntegers.add(Integer.parseInt(string));
             } catch (NumberFormatException e) {
+                // Handle conversion errors, if necessary
                 System.out.println("Error converting element " + string);
             }
         }
