@@ -2,6 +2,10 @@ package org.example.streams;
 
 import java.time.LocalDate;
 
+
+/**
+ * Represents a movie with basic information such as title, type, duration, and release date.
+ */
 public class Movie {
 
     private String title;
@@ -9,6 +13,14 @@ public class Movie {
     private long duration;
     private LocalDate releaseDate;
 
+    /**
+     * Constructs a Movie object with the specified parameters.
+     *
+     * @param title       The title of the movie.
+     * @param type        The type or genre of the movie.
+     * @param duration    The duration of the movie in minutes.
+     * @param releaseDate The release date of the movie.
+     */
     public Movie(String title, String type, long duration, LocalDate releaseDate) {
         this.title = title;
         this.type = type;
