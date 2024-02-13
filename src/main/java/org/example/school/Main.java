@@ -23,6 +23,6 @@ public class Main {
 
         List<School> schools = List.of(school, languageSchool);
 
-        System.out.println(schools);
+//        System.out.println(schools.);
     }
 }
