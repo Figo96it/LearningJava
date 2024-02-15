@@ -13,7 +13,6 @@ public class Files {
         Path path2 = Path.of("/Users/damianfiginski/IdeaProjects/GenericTypes/src/main/resources/secondData");
         createFirstFile(path);
         createSecondFile(path, path2);
-
     }
 
     private static void createSecondFile(Path path, Path path2) {
@@ -37,7 +36,7 @@ public class Files {
             java.nio.file.Files.createFile(path);
             Random random = new Random();
             for (int i = 0; i < 500; i++) {
-                Integer randomNumber = random.nextInt((999999 - 999) + 1) + 999;
+                Integer randomNumber = random.nextInt(1000000) + 999;
                 java.nio.file.Files.write(path, String.valueOf(randomNumber).getBytes(), StandardOpenOption.APPEND);
                 java.nio.file.Files.write(path, System.lineSeparator().getBytes(), StandardOpenOption.APPEND);
             }
